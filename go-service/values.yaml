@@ -4,6 +4,7 @@
 
 replicaCount: 1
 
+# Reg Secret name to pull docker image from Artifactory
 imagePullSecrets:
 
 image:
