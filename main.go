@@ -29,7 +29,7 @@ func main() {
 	server.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		log.Printf("Serving request: %s", r.URL.Path)
 		host, _ := os.Hostname()
-		date := time.Now().Local().Format("2006-01-02")
+		date := time.Now().Local().Format("Mon Jan _2 15:04:05 2006")
 		data := Host{
 			Host: host,
 			Date: date,
